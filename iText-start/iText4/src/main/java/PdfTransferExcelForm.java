@@ -53,6 +53,32 @@ public class PdfTransferExcelForm {
 
         System.out.println(cqFormField.applicantTypeQ1);
 
+        //Applicant Type Q2
+        if(cqFormField.hasRadioIsCheck(fields,CQFormField.APPLICANT_TYPE_Q2_1)){
+            cqFormField.applicantTypeQ2=CQFormField.APPLICANT_TYPE_Q2_1_VALUE;
+        }else if(cqFormField.hasRadioIsCheck(fields,CQFormField.APPLICANT_TYPE_Q2_2)){
+            cqFormField.applicantTypeQ2=CQFormField.APPLICANT_TYPE_Q2_2_VALUE;
+        }else if(cqFormField.hasRadioIsCheck(fields,CQFormField.APPLICANT_TYPE_Q2_3)){
+            cqFormField.applicantTypeQ2=CQFormField.APPLICANT_TYPE_Q2_3_VALUE;
+        }
+        System.out.println(cqFormField.applicantTypeQ2);
+
+        //Regular Customer Type
+        if(cqFormField.hasRadioIsCheck(fields,CQFormField.REGULAR_CUSTOMER_TYPE_1)){
+            cqFormField.regularCustomerType=CQFormField.REGULAR_CUSTOMER_TYPE_1_VALUE;
+        }else if(cqFormField.hasRadioIsCheck(fields,CQFormField.REGULAR_CUSTOMER_TYPE_2)){
+            cqFormField.regularCustomerType=CQFormField.REGULAR_CUSTOMER_TYPE_2_VALUE;
+        }else if(cqFormField.hasRadioIsCheck(fields,CQFormField.REGULAR_CUSTOMER_TYPE_3)){
+            cqFormField.regularCustomerType=CQFormField.REGULAR_CUSTOMER_TYPE_3_VALUE;
+        }else if(cqFormField.hasRadioIsCheck(fields,CQFormField.REGULAR_CUSTOMER_TYPE_4)){
+            cqFormField.regularCustomerType=CQFormField.REGULAR_CUSTOMER_TYPE_4_VALUE;
+        }
+        System.out.println(cqFormField.regularCustomerType);
+
+
+
+
+
 
         // mapping excel
 
